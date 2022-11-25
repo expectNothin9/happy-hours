@@ -1,0 +1,26 @@
+.article .title {
+  font-size: 2rem;
+}
+
+.article .content {
+  line-height: 1.5;
+}
+
+.rules-list > li {
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.rules-list > li:first-of-type {
+  border: none;
+}
+
+.rules-list > li .rule-title{
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rules-list > li {
+    border-color: #222;
+  }
+}
