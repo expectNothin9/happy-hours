@@ -1,0 +1,32 @@
+.form {
+  width: 500px;
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid #eaeaea;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form label > input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.submit-button-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button-box input[type="submit"] {
+  padding: 0.5rem 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .form  {
+    border-color: #222;
+  }
+}
