@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import commonStyles from '../../styles/happy-hours/common.module.css'
+import commonStyles from '../../styles/common.module.css'
 
 export default function HappyHoursHome() {
   return (
