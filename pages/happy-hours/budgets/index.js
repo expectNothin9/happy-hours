@@ -6,7 +6,7 @@ import budgetsStyles from '../../../styles/happy-hours/budgets.module.css'
 // This gets called on every request
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch('http://127.0.0.1:8090/api/collections/budgets/records')
+  const res = await fetch(`${process.env.NEXT_PUBLIC_PB_HOST}/api/collections/budgets/records`)
   const budgetsRecords = await res.json()
 
   // Pass data to the page via props

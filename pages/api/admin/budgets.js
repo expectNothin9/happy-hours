@@ -1,6 +1,7 @@
 import PocketBase from 'pocketbase'
 
-const pb = new PocketBase('http://127.0.0.1:8090')
+const PB_HOST = process.env.NEXT_PUBLIC_PB_HOST
+const pb = new PocketBase(PB_HOST)
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -9,7 +10,7 @@ export default async function handler(req, res) {
   }
   // create budgets records on PocketBase (with auth token)
   await pb.admins.authWithPassword(process.env.PB_USERNAME, process.env.PB_PASSWORD)
-  const resp = await fetch('http://127.0.0.1:8090/api/collections/budgets/records', {
+  const resp = await fetch(`${PB_HOST}/api/collections/budgets/records`, {
     method: 'POST',
     headers: {
       Authorization: pb.authStore.token,
