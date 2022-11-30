@@ -40,3 +40,4 @@ pocketbase
 pb_data
 CHANGELOG.md
 LICENSE.md
+fly.toml
