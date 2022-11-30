@@ -10,7 +10,7 @@ The React Framework for Production. [Next.js](https://nextjs.org/) gives you
 
 ### Client and Server
 
-In the context of web applications
+In the [context of web applications](https://nextjs.org/learn/foundations/how-nextjs-works/client-and-server)
 - client:
   - browser on a user's device
   - an interface the user can interact with
